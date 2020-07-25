@@ -1,0 +1,47 @@
+{% extends 'aj/basic.html'%}
+{% load static %}
+{% block titles %}Gallary{% endblock %}
+{% block css %}
+<style type="text/css">
+	
+</style>
+{% endblock %}
+
+{% block body %}
+<form method="post" action="">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" name="Create User">
+</form>
+
+<!--
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstname">First Name</label>
+      <input type="text" class="form-control" id="firstname">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" id="lastname">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="emailAddress">Email</label>
+    <input type="email" class="form-control" id="emailAddress" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="passwordemail">Password</label>
+    <input type="password" class="form-control" id="passwordemail" placeholder="">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+-->
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+	
+</script>
+{% endblock %}

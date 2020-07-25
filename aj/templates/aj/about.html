@@ -1,0 +1,105 @@
+{% extends 'aj/basic.html'%}
+{% load static %}
+{% block titles %}About Us{% endblock %}
+{% block css %}
+<style type="text/css">
+	.content{
+		margin: 20px;
+	}
+	.image{
+		width: 40%;
+		height:20%;
+		margin: 20px;
+		padding: 10px;
+		border: 2px solid black;
+	}
+	.row-p{
+		width: 40%;
+		margin: 20px;
+	}
+	.row-content{
+		margin: 20px;
+	}
+	.team-img{
+		height: 300px;
+		width: 240px;
+		border: 2px solid #1bbc9b;
+	}
+	.team-div{
+		margin: 10px;
+		flex: 0 0 20%;
+    	max-width: 20%;
+	}
+	.team{
+		display: flex;
+		justify-content: center;
+	}
+	.team-head{
+		text-align: center;
+	}
+	.team-info{
+		background-color: #1bbc9b;
+		width: 240px;
+	}
+</style>
+{% endblock %}
+
+{% block body %}
+<div>
+	<div class="row row-content">
+		<div class="content">
+			<h1>About Company</h1>
+			<div class="row">
+				<p class="row-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut est arcu. Donec hendrerit velit mi, sed convallis nisi eleifend eget. Morbi vel magna odio. Lorem ipsum dolor consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut est consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut est ipsum dolor sit arcu.
+				Ut ullamcorper ac eros nec molestie. Curabitur luctus dui fringilla magna laoreet lacinia. Pellentesque velit ante, convallis quis justo vel, condimentum tempus diam. Donec vitae pretium lectus. Nullam faucibus nulla sit amet tincidunt gravida. Maecenas posuere pharetra tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent molestie lectus in arcu pharetra pulvinar. Donec cursus diam id quam accumsan maximus. Morbi ac tincidunt quam, quis cursus urna. Pellentesque in consectetur ante, a efficitur nisi</p>
+					<img src="{%static 'images/about.jpg'%}" class="image">
+			</div>
+		</div>
+	</div>
+	<div class="team-head">
+		<h1>Take a look at Our Team</h1>
+		<p>ccumsan maximus. Morbi ac tincidunt quam, quis cursus urna.</p>
+	</div>
+	<div class="row team">
+		<div class="team-div col-md-3">
+			<div class="column">
+				<img src="{%static 'images/team1.jpg'%}" class="team-img">
+				<div class="team-info">
+					<h1>Hello</h1>
+				</div>
+			</div>
+			
+		</div>
+		<div class="team-div col-md-3">
+			<div class="column">
+				<img src="{%static 'images/team2.jpg'%}" class="team-img">
+				<div class="team-info">
+					<h1>Hello</h1>
+				</div>
+			</div>
+		</div>
+		<div class="team-div col-md-3">
+			<div class="column">
+				<img src="{%static 'images/team3.jpg'%}" class="team-img">
+				<div class="team-info">
+					<h1>Hello</h1>
+				</div>
+			</div>
+		</div>
+		<div class="team-div col-md-3">
+			<div class="column">
+				<img src="{%static 'images/team4.jpg'%}" class="team-img">
+				<div class="team-info">
+					<h1>Hello</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+	
+</script>
+{% endblock %}
